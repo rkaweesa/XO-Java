@@ -3409,7 +3409,7 @@ index 0368a7e..5577273 100644
 -  public void testMemberRegsitrationsuccessful() throws Exception {
 -    HttpEntity<Object> member = getHttpEntity(
 -        "{\"name\": \"test 1\", \"email\": \"test10000000000001@gmail.com\"," 
--            + " \"membershipStatus\": \"ACTIVE\",\"membershipStartDate\":\"2018-08-08T12:12:12\" }");
+-            + " \"membershipStatus\": \"ACTIVE\",\"membershipStartDate\":\"2019-06-10T12:12:12\" }");
 -    
 -    ResponseEntity<Member> response = template.postForEntity(
 -        "/api/member", member, Member.class);
