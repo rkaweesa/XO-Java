@@ -1,8 +1,8 @@
 From 096f2af1bb562395267e8465079d313e251cbfe2 Mon Sep 17 00:00:00 2001
 From: rkaweesa <rkaweesa-PC.local>
-Date: Fri, 10 May 2019 16:01:16 +0300
+Date: Fri, 10 May 2019 16:01:16 +0300 
 Subject: [PATCH] My submission
-XOV: XO_0_0_1
+XOV: XO_0_0_1 00
 
 ---
  .idea/encodings.xml                           |   4 +
@@ -10,7 +10,6 @@ XOV: XO_0_0_1
  .idea/misc.xml                                |   7 +
  .idea/vcs.xml                                 |   6 +
  .idea/workspace.xml                           | 786 ++++++++++++++++++
- G                                             |   0
  build.gradle                                  |   4 +-
  cross-library-java_.patch                     |   0
  ...over.cross-library-java.main.kotlin_module | Bin 0 -> 16 bytes
@@ -71,7 +70,6 @@ XOV: XO_0_0_1
  create mode 100644 .idea/misc.xml
  create mode 100644 .idea/vcs.xml
  create mode 100644 .idea/workspace.xml
- create mode 100644 G
  create mode 100644 cross-library-java_.patch
  create mode 100644 out/production/classes/META-INF/com.crossover.cross-library-java.main.kotlin_module
  create mode 100644 out/production/classes/com/crossover/techtrial/CrossLibraryApplication.class
@@ -454,34 +452,34 @@ index 0000000..323e776
 +    <servers />
 +  </component>
 +  <component name="TestHistory">
-+    <history-entry file="TestingCrossLibraryApplication - 2018.12.16 at 04h 10m 17s.xml">
++    <history-entry file="TestingCrossLibraryApplication - 2019.06.10 at 16h 10m 17s.xml">
 +      <configuration name="TestingCrossLibraryApplication" configurationId="JUnit" />
 +    </history-entry>
-+    <history-entry file="TestingCrossLibraryApplication - 2018.12.16 at 04h 18m 42s.xml">
++    <history-entry file="TestingCrossLibraryApplication - 2019.06.10 at 16h 18m 42s.xml">
 +      <configuration name="TestingCrossLibraryApplication" configurationId="JUnit" />
 +    </history-entry>
-+    <history-entry file="TestingCrossLibraryApplication - 2018.12.16 at 04h 21m 07s.xml">
++    <history-entry file="TestingCrossLibraryApplication - 2019.06.10 at 16h 21m 07s.xml">
 +      <configuration name="TestingCrossLibraryApplication" configurationId="JUnit" />
 +    </history-entry>
-+    <history-entry file="TestingCrossLibraryApplication - 2018.12.16 at 04h 23m 52s.xml">
++    <history-entry file="TestingCrossLibraryApplication - 2019.06.10 at 16h 23m 52s.xml">
 +      <configuration name="TestingCrossLibraryApplication" configurationId="JUnit" />
 +    </history-entry>
-+    <history-entry file="TestingCrossLibraryApplication - 2018.12.16 at 04h 26m 55s.xml">
++    <history-entry file="TestingCrossLibraryApplication - 2019.06.10 at 16h 26m 55s.xml">
 +      <configuration name="TestingCrossLibraryApplication" configurationId="JUnit" />
 +    </history-entry>
-+    <history-entry file="TestingCrossLibraryApplication - 2018.12.16 at 04h 37m 41s.xml">
++    <history-entry file="TestingCrossLibraryApplication - 2019.06.10 at 16h 37m 41s.xml">
 +      <configuration name="TestingCrossLibraryApplication" configurationId="JUnit" />
 +    </history-entry>
-+    <history-entry file="TestingCrossLibraryApplication - 2018.12.16 at 04h 39m 21s.xml">
++    <history-entry file="TestingCrossLibraryApplication - 2019.06.10 at 16h 39m 21s.xml">
 +      <configuration name="TestingCrossLibraryApplication" configurationId="JUnit" />
 +    </history-entry>
-+    <history-entry file="TestingCrossLibraryApplication - 2018.12.16 at 04h 44m 44s.xml">
++    <history-entry file="TestingCrossLibraryApplication - 2019.06.10 at 16h 44m 44s.xml">
 +      <configuration name="TestingCrossLibraryApplication" configurationId="JUnit" />
 +    </history-entry>
-+    <history-entry file="TestingCrossLibraryApplication - 2018.12.16 at 04h 48m 12s.xml">
++    <history-entry file="TestingCrossLibraryApplication - 2019.06.10 at 16h 48m 12s.xml">
 +      <configuration name="TestingCrossLibraryApplication" configurationId="JUnit" />
 +    </history-entry>
-+    <history-entry file="TestingCrossLibraryApplication - 2018.12.16 at 04h 49m 02s.xml">
++    <history-entry file="TestingCrossLibraryApplication - 2019.06.10 at 16h 49m 02s.xml">
 +      <configuration name="TestingCrossLibraryApplication" configurationId="JUnit" />
 +    </history-entry>
 +  </component>
@@ -3449,7 +3447,7 @@ index 0368a7e..5577273 100644
 +    public void testMemberRegistrationSuccessful() throws Exception {
 +        HttpEntity<Object> member = getHttpEntity(
 +                "{\"name\": \"Elon Musk\", \"email\": \"emuskmember@gmail.com\","
-+                        + " \"membershipStatus\": \"ACTIVE\",\"membershipStartDate\":\"2018-12-15T12:12:12\" }");
++                        + " \"membershipStatus\": \"ACTIVE\",\"membershipStartDate\":\"2019-06-10T12:12:12\" }");
 +
 +        ResponseEntity<Member> response = template.postForEntity(
 +                "/api/member", member, Member.class);
@@ -3465,11 +3463,11 @@ index 0368a7e..5577273 100644
 +    public void testMemberDuplicatedEmailOnRegistration() throws Exception {
 +        HttpEntity<Object> member1 = getHttpEntity(
 +                "{\"name\": \"Elon Musk\", \"email\": \"emuskmember@gmail.com\","
-+                        + " \"membershipStatus\": \"ACTIVE\",\"membershipStartDate\":\"2018-12-15T12:12:12\" }");
++                        + " \"membershipStatus\": \"ACTIVE\",\"membershipStartDate\":\"2019-06-10T12:12:12\" }");
 +
 +        HttpEntity<Object> member2 = getHttpEntity(
 +                "{\"name\": \"Larry Page\", \"email\": \"emuskmember@gmail.com\","
-+                        + " \"membershipStatus\": \"ACTIVE\",\"membershipStartDate\":\"2018-12-15T12:12:12\" }");
++                        + " \"membershipStatus\": \"ACTIVE\",\"membershipStartDate\":\"2019-06-10T12:12:12\" }");
 +
 +        ResponseEntity<Member> response1= template.postForEntity(
 +                "/api/member", member1, Member.class);
@@ -3490,7 +3488,7 @@ index 0368a7e..5577273 100644
 +    public void testWrongNameStartOnRegistration() throws Exception {
 +        HttpEntity<Object> member = getHttpEntity(
 +                "{\"name\": \"1Elon Musk\", \"email\": \"emuskmember@gmail.com\","
-+                        + " \"membershipStatus\": \"ACTIVE\",\"membershipStartDate\":\"2018-12-15T12:12:12\" }");
++                        + " \"membershipStatus\": \"ACTIVE\",\"membershipStartDate\":\"2019-06-10T12:12:12\" }");
 +
 +        ResponseEntity<Member> response = template.postForEntity(
 +                "/api/member", member, Member.class);
@@ -3502,7 +3500,7 @@ index 0368a7e..5577273 100644
 +    public void testTooShortNameOnRegistration() throws Exception {
 +        HttpEntity<Object> member = getHttpEntity(
 +                "{\"name\": \"a\", \"email\": \"emuskmember@gmail.com\","
-+                        + " \"membershipStatus\": \"ACTIVE\",\"membershipStartDate\":\"2018-12-15T12:12:12\" }");
++                        + " \"membershipStatus\": \"ACTIVE\",\"membershipStartDate\":\"2019-06-10T12:12:12\" }");
 +
 +        ResponseEntity<Member> response = template.postForEntity(
 +                "/api/member", member, Member.class);
@@ -3515,7 +3513,7 @@ index 0368a7e..5577273 100644
 +        HttpEntity<Object> member = getHttpEntity(
 +                "{\"name\": \"asdasdasd asdas dasda sdas dasdasd asdasdadasdasdasd" +
 +                        " asd as dasdadadasdas asdasdasdas asdasdasdasdaax\", \"email\": \"emuskmember@gmail.com\","
-+                        + " \"membershipStatus\": \"ACTIVE\",\"membershipStartDate\":\"2018-12-15T12:12:12\" }");
++                        + " \"membershipStatus\": \"ACTIVE\",\"membershipStartDate\":\"2019-06-10T12:12:12\" }");
 +
 +        ResponseEntity<Member> response = template.postForEntity(
 +                "/api/member", member, Member.class);
@@ -3528,7 +3526,7 @@ index 0368a7e..5577273 100644
 +
 +        HttpEntity<Object> member = getHttpEntity(
 +                "{\"name\": \"Morgan Freeman\", \"email\": \"mfreeman@gmail.com\","
-+                        + " \"membershipStatus\": \"ACTIVE\",\"membershipStartDate\":\"2018-12-15T12:12:12\" }");
++                        + " \"membershipStatus\": \"ACTIVE\",\"membershipStartDate\":\"2019-06-10T12:12:12\" }");
 +
 +        ResponseEntity<Member> response = template.postForEntity(
 +                "/api/member", member, Member.class);
@@ -3550,7 +3548,7 @@ index 0368a7e..5577273 100644
 +
 +        HttpEntity<Object> member = getHttpEntity(
 +                "{\"name\": \"Morgan Freeman\", \"email\": \"mfreeman@gmail.com\","
-+                        + " \"membershipStatus\": \"ACTIVE\",\"membershipStartDate\":\"2018-12-15T12:12:12\" }");
++                        + " \"membershipStatus\": \"ACTIVE\",\"membershipStartDate\":\"2019-06-10T12:12:12\" }");
 +
 +        ResponseEntity<Member> response = template.postForEntity(
 +                "/api/member", member, Member.class);
@@ -3648,7 +3646,7 @@ index 0000000..d5d9d8d
 +
 +        HttpEntity<Object> httpMember = getHttpEntity(
 +                "{\"name\": \"Larry Ellison\", \"email\": \"lellison@gmail.com\","
-+                        + " \"membershipStatus\": \"ACTIVE\",\"membershipStartDate\":\"2018-12-15T12:12:12\" }");
++                        + " \"membershipStatus\": \"ACTIVE\",\"membershipStartDate\":\"2019-06-10T12:12:12\" }");
 +
 +        member = template.postForEntity(
 +                "/api/member", httpMember, Member.class).getBody();
@@ -3797,7 +3795,7 @@ index 0000000..d5d9d8d
 +    public void testMembershipProblemOnRegistration () {
 +        HttpEntity<Object> httpMember = getHttpEntity(
 +                "{\"name\": \"Larry Inactive Ellison\", \"email\": \"lellisoninactive@gmail.com\","
-+                        + " \"membershipStatus\": \"INACTIVE\",\"membershipStartDate\":\"2018-12-15T12:12:12\" }");
++                        + " \"membershipStatus\": \"INACTIVE\",\"membershipStartDate\":\"2019-06-10T12:12:12\" }");
 +
 +        Member memberInactive = template.postForEntity(
 +                "/api/member", httpMember, Member.class).getBody();
@@ -3873,5 +3871,5 @@ index 0000000..5ebc6f4
 +</module>
 \ No newline at end of file
 -- 
-2.17.2 (Apple Git-113)
+
 
